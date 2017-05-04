@@ -1,0 +1,56 @@
+# this yaml is a job for turning on the museum
+
+collections:
+  trex-in-town:
+    name: T.rex in Town exhibition
+    type: exhibition
+    state: enabled
+    actions:
+      poweron:
+        description: Turn on the T.rex in Town exhibition
+        blocking: true
+        sequence:
+          - description: Turning on all computers
+            objective: poweron
+            devices:
+              - interactive-graffiti-001
+              - interactive-gym-001
+              - interactive-dance-001
+              - interactive-medischdossier-001
+          - objective: delay
+            description: Waiting for 120 seconds
+            time: 120
+      poweroff:
+        description: Turn off the T.rex in Town exhibition
+        blocking: true
+        sequence:
+          - description: Turning off all computers
+            objective: poweroff
+            devices:
+              - interactive-graffiti-001
+              - interactive-gym-001
+              - interactive-dance-001
+              - interactive-medischdossier-001
+          - objective: delay
+            description: Waiting for 120 seconds
+            time: 120
+
+  werkverlichting:
+    name: T.rex in Town werkverlichting
+    type: exhibition
+    state: enabled
+    actions:
+      poweron:
+        description: Turn on the werkverlichting in the T.rex in Town exhibition
+        blocking: true
+        sequence:
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2
+      poweroff:
+        description: Turn on the werkverlichting in the T.rex in Town exhibition
+        blocking: true
+        sequence:
+          - objective: delay
+            description: Waiting for 2 seconds
+            time: 2

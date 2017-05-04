@@ -1,0 +1,72 @@
+# YAML file defining all devices.
+# ID should be unique
+# device-001:
+#   type: computer
+#   barcode: dt000000
+#   description: Device
+#   ip: 172.16.75.222
+#   mac: 00:00:00:00
+#   actions:
+#     - poweron
+#     - poweroff
+#     - status
+
+devices:
+  # Stargazer
+  stargazer-001:
+    type: linux
+    barcode: sr006019
+    description: Stargazer and management server
+    ip: 172.16.61.1
+    mac: 2c:94:64:00:79:29
+    state: enabled
+
+  # Interactives
+  interactive-graffiti-001:
+    type: windows
+    barcode: dt005873
+    description: T.rex graffiti interactive
+    ip: 172.16.61.14
+    mac: 40:8d:5c:81:9b:44
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  interactive-gym-001:
+    type: windows
+    barcode: dt005916
+    description: T.rex gym interactive
+    ip: 172.16.61.15
+    mac: 40:8d:5c:b3:8b:41
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  interactive-dance-001:
+    type: windows
+    barcode: dt005872
+    description: T.rex dance interactive
+    ip: 172.16.61.16
+    mac: 40:8d:5c:81:9b:10
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
+  interactive-medischdossier-001:
+    type: windows
+    barcode: dt005871
+    description: T.rex medisch dossier interactive
+    ip: 172.16.61.17
+    mac: 40:8d:5c:81:9b:17
+    state: enabled
+    actions:
+      - poweron
+      - poweroff
+      - status
+
