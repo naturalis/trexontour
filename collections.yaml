@@ -13,6 +13,7 @@ collections:
           - description: Turning on all computers
             objective: poweron
             devices:
+              - test-pc-001
               - interactive-graffiti-001
               - interactive-gym-001
               - interactive-dance-001
@@ -27,6 +28,7 @@ collections:
           - description: Turning off all computers
             objective: poweroff
             devices:
+              - test-pc-001
               - interactive-graffiti-001
               - interactive-gym-001
               - interactive-dance-001
