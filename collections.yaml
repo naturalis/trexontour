@@ -34,8 +34,8 @@ collections:
               - interactive-dance-001
               - interactive-medischdossier-001
           - objective: delay
-            description: Waiting for 120 seconds
-            time: 120
+            description: Waiting for 30 seconds
+            time: 30
 
   werkverlichting:
     name: T.rex in Town werkverlichting
