@@ -10,7 +10,7 @@ There's a touch screen interface provided behind the top panel at the back of th
 
 ### Powering on
 
-1. Make sure the power is turned on. The panel PC is configured to automatically start after AC is restored. Approximately two minutes after AC is restored the touch interface will appear.
+1. Make sure the power is turned on. The panel PC is configured to automatically start after AC is restored. Approximately two minutes after power is restored the touch interface will appear.
 
 2. The first time after power restore a login screen will appear. The login credentials are supplied already. Login by clicking on the 'Login' button.
    N.B. If you accidentally hit the 'Reset' button, the credentials should reappear.
@@ -24,6 +24,8 @@ There's a touch screen interface provided behind the top panel at the back of th
    ![Power On popup](img/poweronpopup.png)
 
 5. After you've confirmed, the toggle switch will turn gray and won't respond to input while the exhibition is powering on. After two minutes, when the exhibition is powered on, the switch will turn yellow and respond to input again.
+
+N.B. The exhibit computers are configured to automatically start when the power is restored.
 
 ### Powering off
 
