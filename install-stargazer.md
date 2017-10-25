@@ -1,16 +1,16 @@
 # Installation procedure for Stargazer
 
 ## Install Ubuntu
-1. Download Ubuntu server
-2. Make a startup disk:
-   `sudo if=ubuntu-16.04.2-server-amd64.iso of=/dev/sdX bs=1M`
-3. Boot USB disk
-4. Choose primary network interface: enp1s0
-5. Hostname: stargazer-001.ontour.naturalis.nl
-6. Full name for the new user: Ubuntu
-7. Username for your account: ubuntu
-8. Password for the new user: zie standaard wachtwoord Keepass
-9. Encryption: no
+1.  Download Ubuntu server
+2.  Make a startup disk:
+    `sudo if=ubuntu-16.04.2-server-amd64.iso of=/dev/sdX bs=1M`
+3.  Boot USB disk
+4.  Choose primary network interface: enp1s0
+5.  Hostname: stargazer-001.ontour.naturalis.nl
+6.  Full name for the new user: Ubuntu
+7.  Username for your account: ubuntu
+8.  Password for the new user: zie standaard wachtwoord Keepass
+9.  Encryption: no
 10. Time zone: Europe/Amsterdam
 11. Partitioning method: Guided - use entire disk and set up LVM
 12. Select disk to partition: sda
@@ -31,6 +31,7 @@ Based on this HOWTO configure the network settings:
 2. Create the network config directory for systemd-networkd:
    `mkdir /etc/systemd/network`
 3. Add the configuration for the primary interface `enp1s0.network`:
+
    ```
    [Match]
    Name=enp1s0
@@ -40,7 +41,24 @@ Based on this HOWTO configure the network settings:
    DHCP=yes
    IPForward=yes
    ```
+
+   In case there is no DHCP server available use this configuration (adapt it to
+   local circumstances):
+
+   ```
+   [Match]
+   Name=enp1s0
+
+   [Network]
+   Description=Public interface
+   Address=10.1.10.9/24
+   Gateway=10.1.10.1
+   DNS=10.1.10.1
+   IPForward=yes
+   ```
+
 4. Add the configuration for the LAN interface `enp2s0.network`:
+
    ```
    [Match]
    Name=enp2s0
@@ -50,6 +68,7 @@ Based on this HOWTO configure the network settings:
    Address=172.16.61.1/24
    IPForward=yes
    ```
+
 5. Disable other networking services and enable systemd-networkd:
    ```
    systemctl disable network
