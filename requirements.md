@@ -11,7 +11,7 @@ As outlined in [the network design](img/networkdesign.png) only the controller u
   
   * As an absolute minimum access to the Naturalis VPN server (145.136.246.38) on port 1199 (UDP) should be allowed.
 
-  * In order for the graffitti exhibit to send out mails outgoing traffic to smtp-relay.gmail.com on port 587 should be allowed.
+  * In order for the graffitti exhibit to send out mails outgoing traffic to smtp.gmail.com (port 25) and smtp-relay.gmail.com (port 587) should be allowed.
 
   * In order for the computers to run updates outgoing traffic over HTTP (port 80) and HTTPS (port 443) should be allowed.
 
