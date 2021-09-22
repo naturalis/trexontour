@@ -9,7 +9,7 @@ As outlined in [the network design](img/networkdesign.png) only the controller u
 
 * Access from the controller unit to the internet:
   
-  * As an absolute minimum access to the Naturalis VPN server (145.136.246.38) on port 1199 (UDP) should be allowed.
+  * As an absolute minimum access to the Naturalis VPN server  t-rex-in-town.naturalis.io  port 51820 UDP (current ipaddess is 145.136.241.119)
 
   * In order for the graffitti exhibit to send out mails outgoing traffic to smtp.gmail.com (port 25) and smtp-relay.gmail.com (port 587) should be allowed.
 
