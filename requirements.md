@@ -5,9 +5,10 @@
 The T.rex exhibition consists of (max.) four exhibits with one computer each + one on/off controller unit. The controller unit can be used to power on and off the exhibits and allows remote management of the exhibits by Naturalis. 
 As outlined in [the network design](img/networkdesign.png) only the controller unit needs will be directly connected to the LAN. The requirements for the network access are:
 
-* A DHCP server that gives out an (reserved) IP address to the controller unit.
+* A DHCP server that gives out an (reserved) IP address to the controller unit and a DNS-server
 
 * Access from the controller unit to the internet:
+  *  allow outbound traffic to any udp/tcp port 5938 (teamviewer)
   
   * As an absolute minimum access to the Naturalis VPN server  t-rex-in-town.naturalis.io  port 51820 UDP (current ipaddess is 145.136.241.119)
 
