@@ -62,7 +62,7 @@ Apart from the user interface the exhibition can be powered on and off by anothe
 
 1. Send a HTTP GET request to the control unit, for example with `curl`:
 
-   `curl -i http://<IP address control unit>:5000/v0/collections/trex-in-test/status`
+   `curl -i http://<IP address control unit>:5000/v0/collections/trex-in-town/status`
 
 2. You'll receive a reply in JSON format:
 
